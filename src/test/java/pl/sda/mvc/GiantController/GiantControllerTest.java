@@ -1,4 +1,4 @@
-package pl.sda.mvc;
+package pl.sda.mvc.GiantController;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
