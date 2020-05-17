@@ -33,6 +33,13 @@ class GiantControllerTest {
     }
 
     @Test
+    public void testSetHealth1() {
+        giantController.setHealth(Health.HEALTHY);
+        Mockito.when(giantController.getHealth()).thenReturn(Health.HEALTHY);
+        assertEquals(giantController.getHealth(), Health.HEALTHY);
+    }
+
+    @Test
     public void testSetFatigue(){
         for (final Fatigue fatigue : Fatigue.values()){
             giantController.setFatigue(fatigue);
@@ -49,7 +56,6 @@ class GiantControllerTest {
             giantController.setNourishment(nourishment);
             Mockito.verify(giantModel, Mockito.times(1)).setNourishment(nourishment);
         }
-
         giantController.getNourishment();
         Mockito.verify(giantModel).getNourishment();
     }
