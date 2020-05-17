@@ -1,6 +1,10 @@
 package pl.sda.mvc;
 
 import org.junit.jupiter.api.Test;
+import pl.sda.mvc.GiantController.Fatigue;
+import pl.sda.mvc.GiantController.GiantModel;
+import pl.sda.mvc.GiantController.Health;
+import pl.sda.mvc.GiantController.Nourishment;
 
 import static org.junit.jupiter.api.Assertions.*;
 

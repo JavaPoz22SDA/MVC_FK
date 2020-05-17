@@ -1,11 +1,15 @@
-package pl.sda.mvc;
+package pl.sda.mvc.GiantCollectionController;
+
+import pl.sda.mvc.GiantController.Fatigue;
+import pl.sda.mvc.GiantController.Health;
+import pl.sda.mvc.GiantController.Nourishment;
 
 public class GiantModel {
     private Health health;
     private Fatigue fatigue;
     private Nourishment nourishment;
 
-    GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
+    public GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
         this.health = health;
         this.fatigue = fatigue;
         this.nourishment = nourishment;

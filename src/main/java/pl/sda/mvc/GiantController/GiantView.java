@@ -1,4 +1,4 @@
-package pl.sda.mvc;
+package pl.sda.mvc.GiantController;
 
 public class GiantView {
 

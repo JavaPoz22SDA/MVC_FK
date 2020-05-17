@@ -1,18 +1,17 @@
-package pl.sda.mvc;
+package pl.sda.mvc.GiantController;
 
-public enum Nourishment {
-
-    HUNGRY("hungry"), SATURATED("saturated");
+public enum Health {
+    HEALTHY("healthy"), DEAD("dead");
 
     private String title;
 
-    Nourishment(String title) {
+    Health(String title) {
         this.title = title;
     }
 
     @Override
     public String toString() {
-        return "Nourishment{" +
+        return "Health{" +
                 "title='" + title + '\'' +
                 '}';
     }
